@@ -1,0 +1,146 @@
+@import "./index.css";
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Montserrat";
+  box-sizing: border-box;
+}
+
+.settings {
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  overflow: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.settings_content {
+  width: 398px;
+  height: 310px;
+  left: 201px;
+  top: 245px;
+  border-radius: 4px;
+}
+
+.content {
+  display: flex;
+  flex-direction: row;
+  margin-top: 24px;
+  margin-left: 24px;
+}
+.content_img {
+  width: 50px;
+  height: 50px;
+  margin-right: 24px;
+}
+.content_header_settings {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 28px;
+}
+.content_header_login {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 18px;
+}
+
+.authentication {
+  margin-left: 24px;
+  margin-right: 24px;
+}
+.authentication_miniblock {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin-top: 24px;
+}
+.authentication_text_header {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 18px;
+}
+.authentication_text_content {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 18px;
+}
+.authentication_icon_write {
+  width: 14px;
+  height: 14px;
+}
+.authentication_icon_arrow {
+  width: 14px;
+  height: 11px;
+}
+
+.btn_container {
+  display: flex;
+  justify-content: center;
+  text-decoration: none;
+}
+
+.btn {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 16px;
+  text-align: center;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding: 8px 16px;
+  width: 350px;
+  height: 40px;
+  border-radius: 4px;
+  margin-top: 24px;
+  transition: all 500ms ease;
+}
+
+.change_theme_checkbox {
+  position: relative;
+  left: 118px;
+  top: 0px;
+}
+
+input[type=checkbox] {
+  display: none;
+}
+
+label {
+  width: 20px;
+  height: 20px;
+  display: block;
+  position: relative;
+}
+
+input[type=checkbox] + span {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 20px;
+  height: 20px;
+  background: url(../img/btnThemeLight.svg) no-repeat;
+  background-size: contain;
+  cursor: pointer;
+}
+
+input[type=checkbox]:checked + span {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 20px;
+  height: 20px;
+  background-position: 0 -26px;
+  background: url(../img/btnThemeDark.svg) no-repeat;
+  background-size: contain;
+  cursor: pointer;
+}/*# sourceMappingURL=settingsPage.css.map */

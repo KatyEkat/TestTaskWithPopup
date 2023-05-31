@@ -1,0 +1,40 @@
+:root {
+  --background: #dadada;
+  --settings-content-bg: #ffffff;
+  --content-header-login-color: #919191;
+  --authentication-text-header-color: #1FA2DE;
+  --authentication-text-content-color: #919191;
+  --content-header-settings: #252525;
+  --content-img-gear: url(../img/gearLight.svg);
+  --btn-color: rgba(77, 181, 228, 1);
+  --btn-background: none;
+  --btn-hover: #a1a1a1;
+    --popup: #fff;
+    --popup-bg: #f8f8f8;
+    --popup-content-header: color: #252525;
+    --popup-content-paragraph: #252525;
+}
+
+[dark] {
+  --background: #2D2D2D;
+  --settings-content-bg:  #252525;
+  --content-header-login-color: #919191;
+  --authentication-text-header-color: #31BEFF;
+  --content-header-settings: #ffffff;
+  --authentication-text-content-color: #919191;
+  --btn-color: rgba(0, 149, 217, 1);
+  --btn-background: none;
+  --btn-border: 1px solid #1fa2de;
+  --btn-hover: #e0e0e0;
+  --settings-background: #252525;
+  --content-img-gear: url(../img/gearDark.svg);
+  --popup: #2D2D2D;
+  --popup-bg: #696969;
+  --popup-content-header: #F8F8F8;
+  --popup-content-paragraph: #F8F8F8;
+  --close-popup-btn: #F8F8F8;
+}
+
+body {
+  height: 100vh;
+}

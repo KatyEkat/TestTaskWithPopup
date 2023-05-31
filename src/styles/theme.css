@@ -1,0 +1,63 @@
+@import "./index.css";
+.content_img {
+  fill: var(--content-img-gear);
+}
+
+.content_img {
+  background-image: var(--content-img-gear);
+}
+
+.settings {
+  background: var(--background);
+}
+
+.settings_content {
+  background-color: var(--settings-content-bg);
+}
+
+.content_header_settings {
+  color: var(--content-header-settings);
+}
+
+.content_header_login {
+  color: var(--content-header-login-color);
+}
+
+.authentication_text_header {
+  color: var(--authentication-text-header-color);
+}
+
+.authentication_text_content {
+  color: var(--authentication-text-content-color);
+}
+
+.btn {
+  color: var(--btn-color);
+  background: var(--btn-background);
+  border: 1px solid #1fa2de;
+}
+
+.btn:hover {
+  color: var(--btn-hover);
+  box-shadow: inset 0 0 0 1.3px #1987b9;
+}
+
+.popup {
+  background: var(--popup);
+}
+
+.popup_bg {
+  background: var(--popup-bg);
+}
+
+.popup_content_header {
+  color: var(--popup-content-header);
+}
+
+.popup_content_paragraph {
+  color: var(--popup-content-paragraph);
+}
+
+.close_popup {
+  fill: var(--close-popup-btn);
+}/*# sourceMappingURL=theme.css.map */

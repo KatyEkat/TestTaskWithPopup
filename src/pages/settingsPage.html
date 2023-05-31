@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Settings page</title>
+    <link rel="stylesheet" href="../styles/settingsPage.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="../styles//popup.css" />
+    <link rel="stylesheet" href="../styles/theme.css" />
+  </head>
+  <body class="dark_theme light_theme">
+    <div class="settings">
+      <div class="settings_content">
+        <div class="content">
+          <div class="content_img"></div>
+          <div class="content_header">
+            <h1 class="content_header_settings">Настройки</h1>
+            <p class="content_header_login">Логин: 77777777777</p>
+          </div>
+          <label class="change_theme_checkbox">
+            <input
+              class="change_theme"
+              type="checkbox"
+              onchange="changeTheme(this.checked)" /><span></span
+          ></label>
+        </div>
+
+        <div class="authentication">
+          <div>
+            <div class="authentication_miniblock">
+              <div class="authentication_text">
+                <h2 class="authentication_text_header">
+                  Двухфакторная аутентификация
+                </h2>
+                <p class="authentication_text_content">Не подключена</p>
+              </div>
+
+              <div class="authentication_icon">
+                <a href="#">
+                  <img
+                    class="authentication_icon_write"
+                    src="../img/writeIcon.svg"
+                    alt="writeIcon"
+                  />
+                </a>
+              </div>
+            </div>
+
+            <div class="authentication_miniblock">
+              <div class="authentication_text">
+                <h2 class="authentication_text_header">
+                  Настройки безопасности и API
+                </h2>
+              </div>
+
+              <div class="authentication_icon">
+                <a href="#">
+                  <img
+                    class="authentication_icon_arrow"
+                    src="../img/arrowRight.svg"
+                    alt="writeIcon"
+                  />
+                </a>
+              </div>
+            </div>
+
+            <div class="authentication_miniblock">
+              <div class="authentication_text">
+                <h2 class="authentication_text_header">
+                  Все протоколы интеграции
+                </h2>
+              </div>
+
+              <div class="authentication_icon">
+                <a href="#">
+                  <img
+                    class="authentication_icon_arrow"
+                    src="../img/arrowRight.svg"
+                    alt="writeIcon"
+                  />
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <a class="btn_container" href="#">
+          <button class="btn open_popup" onclick="openPopup">
+            Создать пароль для API
+          </button>
+        </a>
+      </div>
+    </div>
+
+    <div class="hidden popup_bg">
+      <form class="popup">
+        <div class="popup_content">
+          <a class="popup_content_btn" href="#">
+            <svg
+              class="popup_content_btn_img close_popup"
+              width="14"
+              height="14"
+              viewBox="0 0 14 14"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M13.1464 0.146447C13.3417 -0.0488155 13.6583 -0.0488155 13.8536 0.146447C14.0488 0.341709 14.0488 0.658292 13.8536 0.853554L7.70711 7L13.8536 13.1464C14.0488 13.3417 14.0488 13.6583 13.8536 13.8536C13.6583 14.0488 13.3417 14.0488 13.1464 13.8536L7 7.70711L0.853554 13.8536C0.658291 14.0488 0.341709 14.0488 0.146446 13.8536C-0.0488155 13.6583 -0.0488155 13.3417 0.146446 13.1464L6.29289 7L0.146447 0.853554C-0.0488151 0.658292 -0.0488151 0.341709 0.146447 0.146447C0.341709 -0.0488152 0.658292 -0.0488152 0.853554 0.146447L7 6.29289L13.1464 0.146447Z"
+              />
+            </svg>
+          </a>
+
+          <div class="popup_content_text">
+            <h1 class="popup_content_header">Заголовок</h1>
+
+            <p class="popup_content_paragraph">
+              Lorem ipsum dolor sit amet consectetur. Pretium enim turpis
+              posuere amet orci. Consectetur dui velit et quam id. Lorem ipsum
+              dolor sit amet consectetur.
+            </p>
+          </div>
+        </div>
+      </form>
+    </div>
+
+    <script src="../script/script.js"></script>
+  </body>
+</html>
